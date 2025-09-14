@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DandelionClient - بهترین پک کلاینت ایرانی</title>
+    <!-- لینک فونت وزیر از گوگل فونت -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Vazir, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: 3px solid white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fdbb2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 25px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(to right, #2980b9, #3498db);
+        }
+        
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            margin-top: 15px;
+            color: #fdbb2d;
+            font-style: italic;
+        }
+        
+        /* طراحی ریسپانسیو برای صفحه موبایل */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.postimg.cc/FsL0zTTL/IMG-20250914-200501-182.jpg" alt="DandelionClient Logo" class="logo">
+            <h1>DandelionClient</h1>
+        </div>
+        
+        <p class="description">
+            دندلاین کلاینت بهترین پک کلاینت ایرانیه که از سال ۱۴۰۴ درحال فعالیت هست.
+            این کلاینت با اضافه کردن کلی قابلیت های خوب به بازی باعث میشه گیمت بهتر شه و لگ کمتری داشته باشی!
+        </p>
+        
+        <a href="https://t.me/DandelionClient/3" class="download-btn">دانلود کلاینت</a>
+        
+        <p class="tagline">The Best Iranian client+</p>
+    </div>
+
+    <script>
+        // اسکریپت ساده برای افزودن افکت‌های تعاملی
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.querySelector('.download-btn');
+            
+            btn.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            btn.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
