@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانلود دندلاین</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom, limegreen, white);
+            border: 2px dashed #333;
+            padding: 20px;
+            position: relative;
+          font-family: 'Mikhak', Tahoma, sans-serif;
+        }
+
+        /* خط چین دور صفحه */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px dashed rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #2d5016;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid limegreen;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            border-top: 1px dashed #ccc;
+        }
+
+        /* رسپانسیو برای موبایل */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            body::before {
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+      .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: 2px solid limegreen;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 15px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+      }
+      #ryo  {
+        font-family: serif;
+      }
+      @font-face {
+    font-family: 'Mikhak';
+    src: url('fonts/Mikhak-Regular.woff2') format('woff2'),
+         url('fonts/Mikhak-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+          }
+      #banme {
+        color: skyblue;
+      }
+      #banme active  {
+        color: red;
+      }
+      .update  {
+        color: green;
+        background-color: #2d5016;
+        font-size: 20px;
+        border-radius: 23px;
+        border-style: dashed;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="ryo">DandelionClient</h1>
+            <p></p>
+        </div
+          <strong>📥دانلود لیست:</strong>
+      <br>  <a>دانلود ورژن اول دندلاین - Download DandelionClient Version1:</a>
+    <br>  <a class="update" href="t.me/DandelionClient/3">دانلود از تلگرام</a> <br> <a class="update" href="https://www.mediafire.com/file/xutrukfb0vjo2yp/Dandelion+Client+.mcpack/file">دانلود از وب</a>
+        </div>
+    </div>
+</body>
+</html>
